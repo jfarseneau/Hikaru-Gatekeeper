@@ -1,0 +1,19 @@
+H.I.K.A.R.U. Module: Gatekeeper
+===============================
+
+Script that checks in a Mongo database if the incoming card ID is associated to a member, and sends back a signal indicating whether access is granted or not.
+
+==Setup==
+To make it run, you first need to create a server.cfg that will exist in the same directory than the script. Inside the server.cfg file, you can put in this information, modified to your needs:
+[Server]
+host: 127.0.0.1
+port: 9999
+
+[Crypto]
+salt: your_own_salt
+
+[Mongo]
+host: 127.0.0.1
+port: 27017
+database: your_own_db
+
